@@ -1,0 +1,81 @@
+/* Custom styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.menu-card {
+    transition: all 0.3s ease;
+}
+
+.menu-card:active {
+    transform: scale(0.98);
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Input focus effects */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Button press effect */
+button:active {
+    transform: scale(0.98);
+}
+
+/* WhatsApp banner animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#whatsapp-banner {
+    animation: slideDown 0.5s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .text-4xl {
+        font-size: 2rem;
+    }
+    
+    .text-3xl {
+        font-size: 1.75rem;
+    }
+}
+
+/* PWA install button pulse */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(168, 85, 247, 0.8);
+    }
+}
+
+#install-button {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
