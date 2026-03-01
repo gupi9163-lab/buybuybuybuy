@@ -1,0 +1,12 @@
+# Cloudflare Pages Configuration File
+# This file is used by Cloudflare Pages to configure builds
+
+# Build command (must match package.json)
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Do NOT use wrangler deploy - use Pages deployment
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_VERSION = "10"

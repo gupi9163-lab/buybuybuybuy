@@ -27,5 +27,9 @@ logs/
 *.tar.gz
 *.zip
 
+# Wrangler (not needed for Pages)
+wrangler.toml
+wrangler.jsonc
+
 # Wrangler
 .wrangler/
