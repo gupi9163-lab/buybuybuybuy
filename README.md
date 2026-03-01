@@ -115,9 +115,15 @@ pm2 start ecosystem.config.cjs
 
 ### Cloudflare Pages deploy:
 ```bash
-npm run build
-wrangler pages deploy dist --project-name webapp
+# Deploy script ilə (tövsiyə edilir)
+./deploy.sh
+npx wrangler pages deploy dist --project-name webapp
+
+# Və ya birbaşa
+npm run deploy
 ```
+
+**ÖNƏMLİ**: Cloudflare Pages-ə deploy etmək üçün ətraflı təlimat [DEPLOY.md](./DEPLOY.md) faylında
 
 ## 📊 Bal Dərəcələndirmə Sistemi
 - 50+ bal: 🎉 MÜVƏFFƏQİYYƏTLƏ KEÇDİNİZ! ✅

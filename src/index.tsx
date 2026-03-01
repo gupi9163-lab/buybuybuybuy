@@ -3,8 +3,8 @@ import { serveStatic } from 'hono/cloudflare-workers'
 
 const app = new Hono()
 
-// Serve static files
-app.use('/static/*', serveStatic({ root: './public' }))
+// Serve static files from dist directory
+app.use('/static/*', serveStatic({ root: './' }))
 
 // Default route
 app.get('/', (c) => {
